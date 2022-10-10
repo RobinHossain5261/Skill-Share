@@ -6,3 +6,10 @@
 .carousel-pic {
     height: 90vh;
 }
+
+.all-course {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+    margin: 100px;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { useLoaderData } from 'react-router-dom';
 import CarouselOne from '../../images/cursole-1.jpg';
 import CarouselTwo from '../../images/pic-2.jpg';
 import CarouselThree from '../../images/pic-3.jpg';
+import Course from '../Course/Course';
 import './Home.css';
 
 const Home = () => {
+    const data = useLoaderData();
+    const courses = data.data;
     return (
         <div className='home'>
             <Carousel fade>
@@ -47,6 +51,15 @@ const Home = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+
+            <div className='all-course'>
+                {
+                    courses.map(course => <Course
+                        key={course.id}
+                        course={course}
+                    ></Course>)
+                }
+            </div>
         </div>
     );
 };

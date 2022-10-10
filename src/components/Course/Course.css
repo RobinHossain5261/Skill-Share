@@ -1,0 +1,26 @@
+.course-container {
+
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.course-container img {
+    width: 100%;
+}
+
+.course-container h1 {
+    margin: 10px;
+}
+
+.course-container button {
+    background-color: #2ABFC6;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
