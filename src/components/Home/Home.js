@@ -10,6 +10,13 @@ import './Home.css';
 const Home = () => {
     const data = useLoaderData();
     const courses = data.data;
+
+    const quizHandaler = id => {
+        console.log(id)
+    }
+
+
+
     return (
         <div className='home'>
             <Carousel fade>
@@ -57,6 +64,7 @@ const Home = () => {
                     courses.map(course => <Course
                         key={course.id}
                         course={course}
+                        quizHandaler={quizHandaler}
                     ></Course>)
                 }
             </div>

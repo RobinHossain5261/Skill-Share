@@ -4,7 +4,8 @@
 }
 
 .carousel-pic {
-    height: 90vh;
+    height: 100%;
+    border-radius: 30px;
 }
 
 .all-course {

@@ -4,6 +4,7 @@ import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
+import Quiz from './components/Quiz.js/Quiz';
 import Main from './layout/Main';
 
 function App() {
@@ -24,9 +25,16 @@ function App() {
         {
           path: '/about',
           element: <About></About>
-        }
+        },
+        {
+          path: '/quiz/:quizId',
+          loader: async ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`),
+          element: <Quiz></Quiz>
+        },
+
       ]
-    }
+    },
+    { path: '*', element: <h1>No Route Found:404</h1> }
   ]);
   return (
     <div className="App">
