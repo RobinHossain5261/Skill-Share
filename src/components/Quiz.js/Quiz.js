@@ -9,6 +9,7 @@ const Quiz = () => {
     // console.log(questions)
     return (
         <div className='quiz-container'>
+            <h1>{quiz.data.name}</h1>
             {
                 questions.map(allQuestion => <Question
                     key={allQuestion.id}

@@ -8,7 +8,7 @@ const Question = ({ allQuestion }) => {
 
     return (
         <div className='question-container'>
-            <h1>{question}</h1>
+            <h3>{question}</h3>
             <Options options={options}></Options>
         </div>
     );

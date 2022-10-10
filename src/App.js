@@ -37,7 +37,7 @@ function App() {
     { path: '*', element: <h1>No Route Found:404</h1> }
   ]);
   return (
-    <div className="App">
+    <div >
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
