@@ -3,6 +3,7 @@
     margin: 50px auto;
 }
 
-.quiz-container h1 {
+.quiz-container h1,
+h4 {
     text-align: center;
 }

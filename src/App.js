@@ -4,7 +4,7 @@ import './App.css';
 import About from './components/About/About';
 import Blog from './components/Blog/Blog';
 import Home from './components/Home/Home';
-import Quiz from './components/Quiz.js/Quiz';
+import Quiz from './components/Quiz/Quiz';
 import Ststistics from './components/Ststistics/Ststistics';
 import Main from './layout/Main';
 

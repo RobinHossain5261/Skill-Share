@@ -9,7 +9,6 @@ const Home = () => {
     const data = useLoaderData();
     const courses = data.data;
 
-    console.log(courses)
     const quizHandaler = id => {
         console.log(id)
     }

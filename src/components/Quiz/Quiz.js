@@ -6,10 +6,11 @@ import Question from '../Question/Question';
 const Quiz = () => {
     const quiz = useLoaderData();
     const questions = quiz.data.questions;
-    // console.log(questions)
+    console.log(questions)
     return (
         <div className='quiz-container'>
             <h1>{quiz.data.name}</h1>
+            <h4>Total: {questions.length}</h4>
             {
                 questions.map(allQuestion => <Question
                     key={allQuestion.id}
