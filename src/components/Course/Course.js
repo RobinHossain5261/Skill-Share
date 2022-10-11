@@ -7,9 +7,9 @@ const Course = ({ course, quizHandaler }) => {
     return (
         <div className='course-container'>
             <img src={logo} alt="" />
-            <h1>{name}</h1>
+            <h2>{name}</h2>
             <Link to={`/quiz/${id}`}>
-                <button onClick={() => quizHandaler(id)}>Click Me</button>
+                <button onClick={() => quizHandaler(id)}>Start Partice</button>
             </Link>
         </div>
     );

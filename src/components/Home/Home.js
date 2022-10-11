@@ -19,46 +19,18 @@ const Home = () => {
 
     return (
         <div className='home'>
-            <Carousel fade>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-pic"
-                        src={CarouselOne}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-pic"
-                        src={CarouselTwo}
-                        alt="Second slide"
-                    />
+            <div className='bg-image'>
+                <div className='image-text'>
+                    <h4>LIFEBUILDING EDUCATION</h4>
+                    <h2>More Than 25K+ <br />
+                        Edu Courses Online</h2>
+                    <p>Choose from over 250,000 online video courses with new additions published every month, high quality courses.
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-pic"
-                        src={CarouselThree}
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-
+                        Get Started Now  </p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+            <h1>Our Course</h1>
             <div className='all-course'>
                 {
                     courses.map(course => <Course
