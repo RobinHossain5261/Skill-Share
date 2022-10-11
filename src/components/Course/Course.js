@@ -9,7 +9,7 @@ const Course = ({ course, quizHandaler }) => {
             <img src={logo} alt="" />
             <h2>{name}</h2>
             <Link to={`/quiz/${id}`}>
-                <button onClick={() => quizHandaler(id)}>Start Partice</button>
+                <button >Start Partice</button>
             </Link>
         </div>
     );

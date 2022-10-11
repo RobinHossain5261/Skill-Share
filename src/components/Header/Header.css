@@ -45,3 +45,19 @@
 .logo-container h2 {
     color: #2ABFC6;
 }
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+
+    }
+
+    .menu {
+        margin-top: 20px;
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+    }
+}

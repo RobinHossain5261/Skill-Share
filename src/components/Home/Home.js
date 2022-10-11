@@ -9,12 +9,6 @@ const Home = () => {
     const data = useLoaderData();
     const courses = data.data;
 
-    const quizHandaler = id => {
-        console.log(id)
-    }
-
-
-
     return (
         <div className='home'>
             <div className='bg-image'>
@@ -34,7 +28,7 @@ const Home = () => {
                     courses.map(course => <Course
                         key={course.id}
                         course={course}
-                        quizHandaler={quizHandaler}
+
                     ></Course>)
                 }
             </div>

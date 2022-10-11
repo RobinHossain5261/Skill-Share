@@ -4,9 +4,8 @@ import Options from '../Options/Options';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 
 const Question = ({ allQuestion }) => {
-    // console.log(allQuestion);
-    const { question, options } = allQuestion;
-
+    // console.log(allQuestion)
+    const { question, options, correctAnswer } = allQuestion;
     const [answer, setAnswer] = useState(false);
 
     return (
@@ -22,11 +21,9 @@ const Question = ({ allQuestion }) => {
             </div>
             <Options
                 key={allQuestion.id}
+                correctAnswer={correctAnswer}
                 options={options}>
-
             </Options>
-
-
             <h5 className={`bg-success mt-3 ${answer ? answer : 'd-none'}`}>{allQuestion.correctAnswer}</h5>
         </div >
     );

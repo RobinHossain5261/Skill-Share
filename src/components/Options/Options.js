@@ -1,12 +1,16 @@
 import React from 'react';
 import Option from '../Option/Option';
 
-const Options = ({ options }) => {
+const Options = ({ options, correctAnswer }) => {
+    // console.log(correctAnswer)
     // console.log(options)
     return (
         <div>
             {
-                options.map(option => <Option option={option}></Option>)
+                options.map(option => <Option
+                    correctAnswer={correctAnswer}
+                    option={option}
+                ></Option>)
             }
         </div>
     );
