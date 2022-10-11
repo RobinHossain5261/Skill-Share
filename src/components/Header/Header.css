@@ -4,6 +4,9 @@
     align-items: center;
     width: 90%;
     margin: 20px auto 0;
+    box-shadow: 1px 1px 1px #2ABFC6;
+    border-radius: 10px;
+    padding: 5px 30px;
 }
 
 .header a {
@@ -20,6 +23,11 @@
 
 .menu a:focus {
     color: #2ABFC6;
+}
+
+.menu a:hover {
+    color: #2ABFC6;
+    text-decoration: overline;
 }
 
 .logo-container {
