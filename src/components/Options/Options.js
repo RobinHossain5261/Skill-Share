@@ -2,8 +2,6 @@ import React from 'react';
 import Option from '../Option/Option';
 
 const Options = ({ options, correctAnswer }) => {
-    // console.log(correctAnswer)
-    // console.log(options)
     return (
         <div>
             {

@@ -1,14 +1,24 @@
 import React from 'react';
 import './Option.css';
+import Swal from 'sweetalert2';
 
 const Option = ({ option, correctAnswer }) => {
-    // console.log(correctAnswer);
     const handleAnswer = (e) => {
         if (correctAnswer === e) {
-            alert('Congratulation, Right answer');
+            Swal.fire({
+                icon: 'success',
+                title: 'Your answer right',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
         else {
-            alert('Worng Answer');
+            Swal.fire({
+                icon: 'error',
+                title: 'Worng answer',
+                showConfirmButton: false,
+                timer: 1500
+            })
         }
     }
     return (
