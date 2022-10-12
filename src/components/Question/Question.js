@@ -7,11 +7,14 @@ const Question = ({ allQuestion }) => {
     // console.log(allQuestion)
     const { question, options, correctAnswer } = allQuestion;
     const [answer, setAnswer] = useState(false);
+    const replace = question.replace("<p>", " ");
+    const replaceQuestion = replace.replace("</p>", " ");
 
     return (
         <div className='question-container'>
             <div className='flex'>
-                <h3>{question}</h3>
+
+                <h3>Quiz :{replaceQuestion}</h3>
                 <div onClick={() => setAnswer(!answer)}>
                     {
                         answer ? <EyeSlashIcon className="icon" /> : <EyeIcon className="icon" />
