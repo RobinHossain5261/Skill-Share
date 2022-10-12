@@ -4,7 +4,6 @@ import Options from '../Options/Options';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 
 const Question = ({ allQuestion }) => {
-    // console.log(allQuestion)
     const { question, options, correctAnswer } = allQuestion;
     const [answer, setAnswer] = useState(false);
     const replace = question.replace("<p>", " ");

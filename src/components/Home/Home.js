@@ -3,6 +3,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 import Course from '../Course/Course';
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 const Home = () => {
@@ -13,7 +14,6 @@ const Home = () => {
         <div className='home'>
             <div className='bg-image'>
                 <div className='image-text'>
-                    <h4>LIFEBUILDING EDUCATION</h4>
                     <h2>More Than 25K+ <br />
                         Edu Courses Online</h2>
                     <p>Choose from over 250,000 online video courses with new additions published every month, high quality courses.
@@ -32,6 +32,7 @@ const Home = () => {
                     ></Course>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };

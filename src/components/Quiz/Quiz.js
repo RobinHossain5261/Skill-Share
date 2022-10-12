@@ -11,7 +11,7 @@ const Quiz = () => {
     return (
 
         <div className='quiz-container'>
-            <h1>{quiz.data.name}</h1>
+            <h1>Quiz of {quiz.data.name}</h1>
             <h4>Total: {questions.length}</h4>
             {
                 questions.map(allQuestion => <Question
